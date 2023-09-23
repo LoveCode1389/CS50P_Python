@@ -1,4 +1,4 @@
-i = 3
-while i != 0:
+i = 1
+while i <= 3:
     print("meow")
-    i -= 1
+    i += 1
