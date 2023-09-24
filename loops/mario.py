@@ -1,6 +1,6 @@
 def column():
     def main():
-        print_column(3)
+        print_column(int(input("How many columns? ")))
 
 
     def print_column(h):
@@ -10,7 +10,7 @@ def column():
 
 def row():
     def main():
-        print_row(4)
+        print_row(int(input("How many rows? ")))
 
 
     def print_row(w):
@@ -20,21 +20,18 @@ def row():
 
 def square():
     def main():
-        print_square(3)
+        print_square(int(input("How many size? ")))
 
     def print_square(size):
 
         # For each row in square
         for i in range(size):
-
-            # For each brick in row
-            for j in range(size):
-
-                # Print Brick
-                print("#", end="")
-            print()
+            print_row(size)
 
     main()
+
+def print_row(w):
+    print("#" * w)
 
 user_input = input("{column / row / square} ?")
 
