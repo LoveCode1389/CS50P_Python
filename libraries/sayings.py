@@ -1,23 +1,14 @@
 import sys
-import time
-
-# I changed CS50P code for better Output
 
 def main():
-    try:
-        hello(sys.argv[1])
-        time.sleep(2)
-        goodbye(sys.argv[1])
-    except IndexError:
-        hello()
-        time.sleep(2)
-        goodbye()
+    hello("world")
+    goodbye("world")
 
-
-def hello(name="world"):
+def hello(name):
     print(f"hello, {name}")
 
-def goodbye(name="world"):
+def goodbye(name):
     print(f"goodbye, {name}")
 
-main()
+if __name__ == "__main__":
+    main()
