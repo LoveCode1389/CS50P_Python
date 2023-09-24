@@ -11,7 +11,7 @@ def test_square():
         try:
             assert square(arg) == arg * arg
         except AssertionError:
-            print(f'{arg} squared, is not {arg * arg}')
+            print(f'{arg} squared, was not {arg * arg}')
         else:
             print(f'{arg} squared, is {arg * arg}')
 
